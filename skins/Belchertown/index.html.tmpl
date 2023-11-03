@@ -16,6 +16,8 @@
         var mqttclient = "website" + Math.floor(Math.random() * 999999999);
         #end if
         var moment_locale = "$system_locale_js";
+        belchertown_debug("locale: ");
+        belchertown_debug(moment_locale);
         moment.locale(moment_locale);
         
         var homepage_graphgroup = "$Extras.highcharts_homepage_graphgroup";
