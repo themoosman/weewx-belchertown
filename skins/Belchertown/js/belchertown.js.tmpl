@@ -2906,7 +2906,7 @@ function showChart(json_file, prepend_renderTo = false) {
 
 function tzAdjustedMoment(input) {
     let tz = "$moment_js_tz";
-    belchertown_debug("timezone: );
+    belchertown_debug("timezone: ");
     belchertown_debug(tz);
     if (!tz) {
         return moment.unix(input).utcOffset($moment_js_utc_offset);
