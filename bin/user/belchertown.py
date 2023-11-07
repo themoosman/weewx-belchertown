@@ -298,7 +298,7 @@ class getData(SearchList):
         # If theme locale is auto, get the system locale for use with
         # moment.js, and the system decimal for use with highcharts
         if self.generator.skin_dict["Extras"]["belchertown_locale"] == "auto":
-            system_locale, locale_encoding = locale.getdefaultlocale()
+            system_locale, locale_encoding = locale.getlocale()
         else:
             try:
                 # Try setting the locale. Locale needs to be in locale.encoding
